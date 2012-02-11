@@ -9,15 +9,12 @@ import Lib.Packet
 import Lib.Utils
 import List (elemIndex)
 import Data.List (intercalate)
-import Data.Char (toLower)
 import Data.Maybe (fromMaybe, isJust, listToMaybe, fromJust)
 import Text.JSON
 import Data.Monoid
 import Control.Applicative
-import Data.ByteString.Lazy.Char8 (unpack, pack)
 import Text.Regex.Posix
 import Control.Monad.State
-import Debug.Trace
 
 reasonsList = [ "transport not supported"
               , "client not handshaken"

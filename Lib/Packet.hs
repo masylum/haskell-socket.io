@@ -21,6 +21,7 @@ data Packet = Packet { kind :: PacketKind
                      , advice :: Maybe String
                      } deriving (Show, Eq)
 
+defPacket :: Packet
 defPacket = Packet { kind = undefined
                    , packetId = Nothing
                    , name = Nothing
